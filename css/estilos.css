@@ -1,0 +1,232 @@
+/*Estilos Basicos*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --colorTextos: #212529;
+    --colorBody: #E6E6EA;
+    --colorHeader: #FE4A49;
+    --colorFondoTextoHeaderHover: #FED766;
+    --bordeTextoPrincipal: #FED766;
+    --colorFace: #3b5998;
+    --colorGithub: #6e5494;
+    --colorTextoHeader: #E6E6EA;
+    --textoTitulo: 700;
+    --textoSubParrafo: 400;
+    --textoParrafo: 500;
+    --textoSpan: 300;
+    --textoAside: 400
+}
+
+body {
+    background-image: url(/img/memphis-mini.png);
+    background-attachment: fixed;
+}
+
+h2 {
+    text-align: center;
+    border-top: 4px solid var(--bordeTextoPrincipal);
+    padding: 15px 0;
+    margin-top: 40px;
+    font-weight: var(--textoTitulo);
+}
+
+p {
+    line-height: 18px;
+}
+
+span {
+    font-weight: var(--textoSpan);
+}
+
+
+/******Header******/
+
+header {
+    background: var(--colorHeader);
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.paginaCV {
+    font-size: 45px;
+    text-align: left;
+    border-top: none;
+    color: var(--colorTextoHeader);
+    margin-top: 0;
+    padding: 0;
+}
+
+.redes-personales {
+    text-align: right;
+}
+
+.redes-personales a {
+    border-radius: 2px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--colorFondoTextoHeaderHover);
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    color: var(--colorTextos);
+}
+
+.redes-personales a:hover {
+    color: white
+}
+
+.redes-personales .facebook:hover {
+    background-color: var(--colorFace);
+}
+
+.redes-personales .github:hover {
+    background: var(--colorGithub);
+}
+
+.nombre-presentacion {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--colorTextoHeader);
+}
+
+.contenido-nom-presentacion {
+    display: inline-block;
+    border: 2px solid var(--bordeTextoPrincipal);
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.nombre-presentacion h1,
+.nombre-presentacion h3 {
+    text-align: center;
+}
+
+.contenido-nom-presentacion:hover {
+    background: var(--colorFondoTextoHeaderHover);
+}
+
+.nombre-presentacion .contenido-nom-presentacion:hover h1,
+.nombre-presentacion .contenido-nom-presentacion:hover h3 {
+    color: var(--colorTextos);
+}
+
+
+/****Main****/
+
+main .historial {
+    background: var(--colorBody);
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+
+section {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+}
+
+.contenido-historial {
+    margin-bottom: 50px;
+}
+
+.secciones .parrafo-secciones {
+    font-size: 18px;
+    font-weight: var(--textoParrafo);
+}
+
+.secciones .sub-parrafo {
+    font-weight: var(--textoSubParrafo);
+}
+
+
+/****aside*****/
+
+aside {
+    background: var(--colorFondoTextoHeaderHover);
+    margin-top: 50px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+aside .titulo-aptitudes {
+    border-top: 4px solid var(--colorHeader);
+}
+
+.contenido-personal {
+    margin-bottom: 50px;
+}
+
+.contenido-personal ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contenido-personal ul li {
+    list-style: none;
+    display: flex;
+}
+
+.contenido-personal ul li p {
+    margin-left: 8px;
+}
+
+.contenido-personal .texto-aptitudes {
+    border-bottom: 1px solid var(--colorHeader);
+    padding-bottom: 10px;
+}
+
+.contenido-personal a {
+    display: block;
+    padding-bottom: 15px;
+    color: var(--colorTextos);
+}
+
+.contenido-personal a:hover {
+    color: var(--colorHeader);
+}
+
+.modal-title {
+    text-align: center;
+}
+
+
+/*******Footer********/
+
+footer {
+    background: var(--colorHeader);
+    padding: 30px 0;
+}
+
+footer .redes-personales {
+    text-align: center;
+}
+
+footer .redes-personales h4:nth-of-type(1),
+footer .redes-personales a {
+    margin-bottom: 20px;
+}
+
+@media (max-width:767px) {
+    .paginaCV,
+    .redes-personales {
+        text-align: center;
+    }
+    .paginaCV {
+        margin-bottom: 40px;
+    }
+    .redes-personales a {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 30px;
+    }
+}
